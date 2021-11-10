@@ -16,6 +16,10 @@ Take a look at the following code:
 
 Explain why line 4 and line 6 output different numbers.
 
+line 5 print 2,beacuse x is declared as a local variable.
+line 7 print 1, beacuse it has access to global variable.
+
+
 ## Question 2
 
 Take a look at the following code:
@@ -35,6 +39,10 @@ console.log(y)
 
 What will be the output of this code. Explain your answer in 50 words or less.
 
+beacuse x is a global variable then we can access to it 
+so console.log(f1()) will output 10, but y is a local variable,
+so we will face undefiened. 
+
 ## Question 3
 
 Take a look at the following code:
@@ -50,6 +58,8 @@ function f1(val) {
 f1(x);
 console.log(x);
 
+
+
 const y = { x: 9 };
 
 function f2(val) {
@@ -62,3 +72,6 @@ console.log(y);
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+
+output : 10
+objects and arrays are call by refrence, so any manipulation will change the source of them.

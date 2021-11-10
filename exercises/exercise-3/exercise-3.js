@@ -6,3 +6,10 @@ let order = [
   { itemName: "Hot Coffee", quantity: 2, unitPrice: 1.0 },
   { itemName: "Hash Brown", quantity: 4, unitPrice: 0.4 },
 ];
+
+let total = 0;
+order.forEach(({quantity, itemName, unitPrice})=>{
+  console.log(String(quantity).padEnd(5," "), itemName.padEnd(20," "),String((unitPrice.toFixed(2))).padEnd(5," "))
+  total += unitPrice ;
+})
+console.log(`\nTotal: ${total.toFixed(2)}`)
